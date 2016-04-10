@@ -1,12 +1,9 @@
 # Node-Notes
 Things to remember
 
-npm install react --save
-
-
-npm install hjs-webpack ... --save-dev
-
-wird zu {
+### package.json
+```json
+{
   "name": "reactTut",
   "version": "1.0.0",
   "description": "Setting up npm / react / webpack.. scary by now",
@@ -41,19 +38,23 @@ wird zu {
   "author": "Michael Leimstädtner",
   "license": "MIT"
 }
+```
 
+### webpack.config.js
+```javascript
+var getConfig = require('hjs-webpack');
+module.exports = getConfig({
+  in: 'src/main.js',
+  out: 'public',
+  clearBeforeBuild: true
+});
+```
 
-#mkfile webpack.config.js
-
-> var getConfig = require('hjs-webpack');
-> module.exports = getConfig({
->  in: 'src/main.js',
->  out: 'public',
->  clearBeforeBuild: true
->});
-
-npm init
-npm start --watch
+### npm control
+`npm install react --save`
+`npm install hjs-webpack ... --save-dev`
+`npm init`
+`npm start --watch`
 
 
 
