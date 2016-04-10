@@ -7,6 +7,10 @@ bzw.
 
 npm install express hjs-webpack react react-dom babel-preset-es2015 babel-loader url-loader --save-dev
 
++
+
+npm install babel-core babel-preset-react css-loader react-hot-loader webpack --save-dev
+
 mkfile webpack.config.js
 
 > var getConfig = require('hjs-webpack');
